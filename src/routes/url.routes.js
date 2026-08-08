@@ -1,9 +1,8 @@
-const express = require("express");
+import express from "express";
+import * as urlController from "../controllers/url.controller.js";
 
 const router = express.Router();
 
-const urlController = require("../controllers/url.controller");
-
 router.post("/urls", urlController.createUrl);
 
-module.exports = router;
+export default router;

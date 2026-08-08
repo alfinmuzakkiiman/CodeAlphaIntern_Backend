@@ -1,12 +1,12 @@
-const createUrl = async (url) => {
-    console.log("Creating URL:", url);
+import * as urlRepository from "../repositories/url.repository.js";
 
-    return {
+export const createUrl = async (url) => {
+    const shortCode = "abc123";
+
+    const result = await urlRepository.create({
         originalUrl: url,
-        shortcode: "abc123",
-    };
-};
+        shortCode
+    });
 
-module.exports = {
-    createUrl
-}
+    return result;
+};

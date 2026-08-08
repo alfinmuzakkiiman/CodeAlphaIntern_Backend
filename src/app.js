@@ -1,13 +1,12 @@
-const express = require('express');
-const urlRoutes = require("./routes/url.routes");
+import express from "express";
+import urlRoutes from "./routes/url.routes.js";
 
 const app = express();
 
-// Middleware untuk membaca request body dalam format JSON
 app.use(express.json());
+
 app.use("/api/v1", urlRoutes);
 
-// Health check endpoint
 app.get("/", (req, res) => {
     res.status(200).json({
         success: true,
@@ -15,4 +14,4 @@ app.get("/", (req, res) => {
     });
 });
 
-module.exports = app;
+export default app;

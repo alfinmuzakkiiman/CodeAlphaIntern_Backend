@@ -1,6 +1,6 @@
-const urlService = require("../services/url.service");
+import * as urlService from "../services/url.service.js";
 
-const createUrl = async (req, res) => {
+export const createUrl = async (req, res) => {
     const result = await urlService.createUrl(req.body.url);
 
     return res.status(201).json({
@@ -8,8 +8,4 @@ const createUrl = async (req, res) => {
         message: "URL created successfully",
         data: result
     });
-}
-
-module.exports = {
-    createUrl
 };
