@@ -496,7 +496,6 @@ Expected response:
   "message": "API is running"
 }
 ```
-
 ## Author
 
 **Alfin Muzakki Iman**
