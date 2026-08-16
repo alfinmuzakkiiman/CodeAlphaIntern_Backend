@@ -448,7 +448,7 @@ PostgreSQL
 
 This structure keeps HTTP handling, business logic, database operations, and error handling separated.
 
-## ☁️ Deployment
+## Deployment
 
 The API is deployed using **Railway**.
 
