@@ -117,9 +117,6 @@ CodeAlphaIntern_URLShortener/
 ├── prisma.config.ts
 └── vitest.config.js
 ```
-
-> The `generated/prisma` directory is generated automatically by Prisma and should not be committed to the repository.
-
 ## Installation
 
 Clone the repository:
