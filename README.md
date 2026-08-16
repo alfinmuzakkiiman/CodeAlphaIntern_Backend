@@ -117,6 +117,7 @@ CodeAlphaIntern_URLShortener/
 ├── prisma.config.ts
 └── vitest.config.js
 ```
+
 ## Installation
 
 Clone the repository:
